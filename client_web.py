@@ -6,7 +6,7 @@ async def hello():
     uri = "ws://192.168.137.174:80"
     async with websockets.connect(uri) as websocket: #ws connection to the server called websocket
         while True:
-            message = "ziyab ramadan"
+            message = "hello"
             await websocket.send(message)
             print(f"Sent message: {message}")
 
