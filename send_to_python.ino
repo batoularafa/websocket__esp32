@@ -71,23 +71,15 @@ void setup() {
 long last = 0;
 void loop() {
   webSocket.loop();
-  if (text == "ziyab ramadan"){
+  if (text == "hello"){
     if (millis() > last + 50)
   {
     webSocket.broadcastTXT("2,1");
-    //Serial.println("Gadoooooo");
     last = millis();
   }
   }
   
-  /*orfy
-  ziyad 
-  tamim  dol agmad nas 3l kawkab
-  abdullkader
-  gado 
-  borham 
-  batoul (aw74 7d)
-  */
+  
 }
 
 
